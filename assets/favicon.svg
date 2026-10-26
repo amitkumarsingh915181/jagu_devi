@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#be185d"/>
+    </linearGradient>
+  </defs>
+  <path d="M50 88 C38 74 6 52 6 27 C6 10 23 2 38 11 C44 15 48 21 50 24 C52 21 56 15 62 11 C77 2 94 10 94 27 C94 52 62 74 50 88 Z" fill="url(#heartGrad)"/>
+  <!-- Highlight shine -->
+  <path d="M22 22 C26 15 34 12 40 14 C35 18 31 23 30 29 C28 29 24 27 22 22 Z" fill="#ffffff" opacity="0.45"/>
+  <!-- Little sparkle star -->
+  <path d="M74 18 Q77 24 83 24 Q77 24 74 30 Q71 24 65 24 Q71 24 74 18 Z" fill="#ffffff" opacity="0.85"/>
+</svg>

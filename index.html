@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fce7f3">
+  <meta name="description" content="A little birthday surprise made with love for Jaggu.">
+  <title>Happy Birthday, Jaggu!</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 88 C38 74 6 52 6 27 C6 10 23 2 38 11 C44 15 48 21 50 24 C52 21 56 15 62 11 C77 2 94 10 94 27 C94 52 62 74 50 88 Z' fill='%23ec4899'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading birthday surprise">
+    <div class="loader-inner">
+      <svg class="loader-heart" viewBox="0 0 100 90" role="img" aria-label="Animated heart">
+        <path d="M50 82 C40 70 7 49 7 27 C7 5 35 1 50 22 C65 1 93 5 93 27 C93 49 60 70 50 82Z"/>
+      </svg>
+      <div class="loader-sparkle sparkle-one">✦</div><div class="loader-sparkle sparkle-two">✧</div>
+      <p id="loaderStatus">Preparing something special for you<span class="dots">...</span></p>
+      <div class="progress-track"><span></span></div>
+      <button class="loader-open-btn" id="loaderOpenBtn" type="button" aria-label="Open birthday surprise with music">
+        <span class="btn-note">♫</span> Click to Open Surprise! 🎁
+      </button>
+      <p class="loader-tap-hint">Tap anywhere to unwrap with music ♫</p>
+    </div>
+  </div>
+
+  <div class="site-shell" id="site">
+    <header class="topbar">
+      <a class="wordmark" href="#home" aria-label="Jaggu birthday home"><span class="mini-heart">♥</span> for Jaggu</a>
+      <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false" aria-label="Toggle background music">
+        <span class="music-icon">♫</span><span id="musicLabel">Music off</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-glow glow-left"></div><div class="hero-glow glow-right"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A little world made just for you <span class="eyebrow-line"></span></p>
+          <div class="hero-heart" aria-hidden="true">
+            <svg viewBox="0 0 120 110"><path d="M60 100 C47 84 8 59 8 31 C8 4 42 -2 60 25 C78 -2 112 4 112 31 C112 59 73 84 60 100Z"/></svg>
+            <span class="heart-glint">✦</span>
+          </div>
+          <p class="script-note">For someone truly special</p>
+          <h1>Happy Birthday,<br><em>Jaggu!</em></h1>
+          <p class="hero-copy">A little surprise filled with old memories, warm wishes, and all the happiness you deserve.</p>
+          <a class="button button-primary" href="#memories">Open your surprise <span aria-hidden="true">↗</span></a>
+          <p class="date-note">29 October 2026 <span>·</span> Your special day</p>
+        </div>
+        <div class="floating-deco deco-heart h-one">♥</div><div class="floating-deco deco-heart h-two">♥</div>
+        <div class="floating-deco deco-star s-one">✦</div><div class="floating-deco deco-star s-two">✧</div>
+        <div class="hero-bottom">SCROLL TO UNWRAP THE MEMORIES <span>↓</span></div>
+      </section>
+
+      <section class="section intro-section" id="intro">
+        <div class="section-heading reveal">
+          <p class="eyebrow">A tiny trip down memory lane</p>
+          <h2>Some people make<br><em>life a little brighter.</em></h2>
+          <p class="section-copy">And then there are people whose memories make us smile without even trying. This little corner of the internet is all yours, Jaggu.</p>
+        </div>
+        <div class="memory-stamp reveal"><span class="stamp-top">MADE WITH</span><span class="stamp-heart">♥</span><span class="stamp-bottom">LOTS OF LOVE</span></div>
+      </section>
+
+      <section class="section memories-section" id="memories">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Chapter one · The good old days</p>
+          <h2>Little moments,<br><em>big memories.</em></h2>
+          <p class="section-copy">Every picture holds a little story. Here are some precious moments from the journey so far.</p>
+        </div>
+        <p class="grid-label reveal">✦ Childhood memories</p>
+        <div class="photo-grid" id="photoGrid">
+          <button class="polaroid tilt-left reveal" data-photo="assets/childhood (1).webp" data-caption="Little Jaggu" aria-label="Open Little Jaggu photo">
+            <span class="photo-wrap"><img src="assets/childhood (1).webp" alt="Childhood memory of Jaggu" loading="lazy"></span>
+            <span class="photo-caption">Little Jaggu</span><span class="photo-subcaption">A tiny star in the making</span>
+          </button>
+          <button class="polaroid tilt-right reveal" data-photo="assets/childhood (2).webp" data-caption="The early days" aria-label="Open early days photo">
+            <span class="photo-wrap"><img src="assets/childhood (2).webp" alt="Childhood memory" loading="lazy"></span>
+            <span class="photo-caption">The early days</span><span class="photo-subcaption">Where the stories began</span>
+          </button>
+          <button class="polaroid tilt-left reveal" data-photo="assets/childhood (3).webp" data-caption="Childhood magic" aria-label="Open childhood magic photo">
+            <span class="photo-wrap"><img src="assets/childhood (3).webp" alt="Childhood magic" loading="lazy"></span>
+            <span class="photo-caption">Childhood magic</span><span class="photo-subcaption">Every moment was golden</span>
+          </button>
+          <button class="polaroid tilt-right reveal" data-photo="assets/childhood (4).webp" data-caption="Growing up smiling" aria-label="Open growing up photo">
+            <span class="photo-wrap"><img src="assets/childhood (4).webp" alt="Growing up smiling" loading="lazy"></span>
+            <span class="photo-caption">Growing up smiling</span><span class="photo-subcaption">Full of wonder</span>
+          </button>
+        </div>
+        <p class="grid-label reveal">✦ And now</p>
+        <div class="photo-grid now-grid">
+          <button class="polaroid tilt-right reveal" data-photo="assets/now (1).webp" data-caption="All grown up" aria-label="Open recent photo">
+            <span class="photo-wrap"><img src="assets/now (1).webp" alt="Recent photo of Jaggu" loading="lazy"></span>
+            <span class="photo-caption">All grown up</span><span class="photo-subcaption">Look at you now</span>
+          </button>
+          <button class="polaroid tilt-left reveal" data-photo="assets/now (2).webp" data-caption="Shining bright" aria-label="Open recent photo">
+            <span class="photo-wrap"><img src="assets/now (2).webp" alt="Recent photo" loading="lazy"></span>
+            <span class="photo-caption">Shining bright</span><span class="photo-subcaption">Still the same smile</span>
+          </button>
+          <button class="polaroid tilt-right reveal" data-photo="assets/now (3).webp" data-caption="Memories we keep" aria-label="Open recent photo">
+            <span class="photo-wrap"><img src="assets/now (3).webp" alt="Another recent memory" loading="lazy"></span>
+            <span class="photo-caption">Memories we keep</span><span class="photo-subcaption">And many more to come</span>
+          </button>
+        </div>
+        <p class="gallery-footnote">Every photo tells a story worth remembering ♡</p>
+      </section>
+
+      <section class="section then-now-section" id="then-now">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Chapter two · Then & now</p>
+          <h2>Time flies.<br><em>The memories stay.</em></h2>
+        </div>
+        <div class="then-now-grid reveal">
+          <article class="then-card"><span class="image-label">THEN</span><div class="compare-image"><img src="assets/childhood (1).webp" alt="Jaggu as a child" loading="lazy"><span class="photo-placeholder">Childhood photo</span></div><p>That little version of you</p></article>
+          <div class="between-heart" aria-hidden="true">♥</div>
+          <article class="then-card"><span class="image-label">NOW</span><div class="compare-image"><img src="assets/now (1).webp" alt="Jaggu today" loading="lazy"><span class="photo-placeholder">Recent photo</span></div><p>Still becoming amazing</p></article>
+        </div>
+        <p class="then-now-quote reveal">“Years may pass, but some things remain beautiful.”</p>
+      </section>
+
+      <section class="section letter-section" id="letter">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Chapter three · From my heart</p>
+          <h2>A little letter<br><em>just for you.</em></h2>
+          <p class="section-copy" id="letterInstruction">Tap the envelope to read what's waiting inside.</p>
+        </div>
+        <div class="letter-stage reveal" id="letterStage">
+          <!-- The Expanded Letter Card (Never overlaps heading, fully readable) -->
+          <article class="letter-card" id="letterCard" aria-label="Birthday letter for Jaggu">
+            <div class="letter-stamp" aria-hidden="true">💌</div>
+            <h3 class="letter-title">Happy Birthday, Devi Ji!</h3>
+            <div class="letter-body">
+              <p>I hope aapki life ka yeh saal dher saari khushiyan, endless laughter aur beautiful memories lekar aaye. Hamesha aise hi haste raho, apne dreams follow karo aur sabki life mein positivity spread karte raho. 💫</p>
+              <p>Here's to more silly moments, amazing memories aur lots of happiness! 🥂💕</p>
+              <p>Aur haan, Bhagwan kare is saal aapki height bhi thodi badh jaaye! 😂📏</p>
+            </div>
+            <div class="letter-signoff">
+              <span class="signoff-name">With lots of love,</span>
+              <span>Have a wonderful birthday, Devi Ji!</span>
+            </div>
+            <button class="letter-fold-btn" id="letterFoldBtn" type="button" aria-label="Fold letter back into envelope">
+              Fold letter back ✉
+            </button>
+          </article>
+
+          <!-- Interactive Envelope -->
+          <button class="envelope-button" id="envelopeButton" type="button" aria-expanded="false" aria-controls="letterCard" aria-label="Open or fold birthday letter">
+            <span class="envelope-back"></span>
+            <span class="envelope-paper-peek"></span>
+            <span class="envelope-front"></span>
+            <span class="envelope-flap"></span>
+            <span class="envelope-seal">♥</span>
+            <span class="envelope-hint" id="envelopeHint">Tap to open</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section cake-section" id="cake">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Chapter four · Make a wish</p>
+          <h2>A wish for your<br><em>next chapter.</em></h2>
+          <p class="section-copy">Take a deep breath, make a wish, and tap the button when you're ready.</p>
+        </div>
+        <div class="cake-stage reveal">
+          <div class="cake-sparkle cake-sparkle-one">✦</div><div class="cake-sparkle cake-sparkle-two">✧</div>
+          <div class="cake" aria-label="Birthday cake with candles">
+            <div class="candle-row"><span class="candle"><i class="flame"></i></span><span class="candle"><i class="flame"></i></span><span class="candle"><i class="flame"></i></span></div>
+            <div class="cake-top"></div><div class="cake-layer layer-one"><span class="icing-drip"></span></div><div class="cake-layer layer-two"></div><div class="cake-plate"></div>
+          </div>
+          <p class="wish-message" id="wishMessage" aria-live="polite">May all your dreams come true, Jaggu!</p>
+          <button class="button button-primary" id="wishButton" type="button">Make a wish</button>
+          <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="final-section section" id="final">
+        <div class="final-orbit orbit-one"></div><div class="final-orbit orbit-two"></div>
+        <div class="final-content reveal">
+          <p class="eyebrow">And finally, the most important part</p>
+          <div class="final-heart">♥</div>
+          <h2>Happy Birthday,<br><em>Jaggu! 💗</em></h2>
+          <p>May your life always be filled with happiness, love, laughter, and beautiful memories. Keep smiling, keep shining, and always stay the wonderful person you are.</p>
+          <span class="final-signature">You deserve all the good things.</span>
+          <button class="button button-light" id="replayButton" type="button">Relive the surprise ↺</button>
+        </div>
+        <span class="final-sparkle fs-one">✦</span><span class="final-sparkle fs-two">✧</span><span class="final-sparkle fs-three">✦</span>
+      </section>
+    </main>
+    <footer class="footer"><span>Made with love, just for Jaggu</span><span>29 · 10 · 2026</span></footer>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close photo">×</button>
+    <button class="lightbox-nav prev" id="photoPrev" type="button" aria-label="Previous photo">‹</button>
+    <figure><img id="lightboxImage" src="" alt=""><figcaption id="lightboxCaption"></figcaption></figure>
+    <button class="lightbox-nav next" id="photoNext" type="button" aria-label="Next photo">›</button>
+  </div>
+  <audio id="birthdayMusic" src="assets/music.mp3" autoplay loop preload="auto">
+    <source src="assets/music.mp3" type="audio/mpeg">
+    <source src="assets/birthday-music.mp3" type="audio/mpeg">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
